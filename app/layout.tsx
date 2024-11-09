@@ -6,8 +6,9 @@ import Header from '@/components/header';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Doran Software',
-  description: 'Modern and minimalist software portfolio',
+  title: 'Pro Best Carpentry',
+  description:
+    'Custom woodwork, kitchens, and bathrooms, to more involved home renovations',
 };
 
 export default function RootLayout({

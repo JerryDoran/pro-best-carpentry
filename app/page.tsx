@@ -1,10 +1,16 @@
 import Header from '@/components/header';
+import Hero from '@/components/hero';
+import WhyHireMe from '@/components/why-hire-me';
 import Image from 'next/image';
 
 export default function HomePage() {
   return (
-    <main className='relative bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'>
-      <div className='max-w-7xl w-full'>hello</div>
+    <main className=''>
+      <div className='relative bg-home-img bg-cover bg-center bg-no-repeat bg-fixed'>
+        <div className='absolute inset-0 bg-black opacity-40 h-[65vh]' />
+        <Hero />
+        <WhyHireMe />
+      </div>
     </main>
   );
 }

@@ -51,15 +51,15 @@ export default function Navigation() {
           <Button
             variant='outline'
             size='sm'
-            className='font-normal bg-white/10 hover:bg-white/20 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white focus:bg-white/30 transition'
+            className='font-normal bg-transparent hover:bg-gray-900 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none transition group'
           >
             {/* h4 w4 can now be called size-4 */}
-            <Menu className='size-4' />
+            <Menu className='size-5 text-gray-900 group-hover:text-white' />
           </Button>
         </SheetTrigger>
         <SheetContent
           side='right'
-          className='px-2 bg-neutral-900 border-none text-white/90 z-50 '
+          className='px-2 bg-neutral-100 border-none z-50 '
         >
           <nav className='flex flex-col gap-y-2 pt-6'>
             {routes.map((route) => (
@@ -67,7 +67,7 @@ export default function Navigation() {
                 key={route.href}
                 variant={route.href === pathname ? 'secondary' : 'ghost'}
                 onClick={() => onClick(route.href)}
-                className='w-full justify-start bg-white/10 hover:bg-white/20 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none focus:bg-white/30 transition text-white'
+                className='justify-start  hover:bg-neutral-200 border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none transition text-neutral-800 '
               >
                 {route.label}
               </Button>
@@ -79,7 +79,7 @@ export default function Navigation() {
   }
 
   return (
-    <nav className='hidden lg:flex items-center gap-x-2 overflow-x-auto'>
+    <nav className='hidden lg:flex items-center gap-x-2 overflow-x-auto pb-2'>
       {routes.map((route) => (
         <NavItem
           key={route.href}
