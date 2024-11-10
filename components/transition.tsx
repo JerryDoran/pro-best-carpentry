@@ -7,8 +7,8 @@ export default function Transition() {
           Trust Your Home With Professional Quality Work
         </h1>
 
-        <div className='opacity-0 animate-fadeIn delay-500 w-70 text-xl rounded-md bg-white/50 text-neutral-800 py-6 px-6 font-bold mt-6'>
-          <p>
+        <div className='w-70 text-lg rounded-md bg-white/50 text-neutral-800 py-2 px-2 font-bold mt-6'>
+          <p className='text-center'>
             Hire a trusted professional contractor in the Youngstown, Ohio area
           </p>
         </div>
