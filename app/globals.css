@@ -104,3 +104,10 @@
 .text-custom {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
+
+@media screen and (max-width:767px) {
+  .homepage section:first-child {
+      height: 30vh !important;
+      min-height: unset !important;
+  }
+  }
