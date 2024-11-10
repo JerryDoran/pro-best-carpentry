@@ -9,11 +9,11 @@ export default function Hero() {
           Pro Best Carpentry
         </h1>
         <p className='opacity-0 animate-fadeIn delay-200 mt-4 text-lg md:text-2xl text-center max-w-4xl mx-auto shadow-md'>
-          We can handle all of your construction / carpentry needs. We offer
-          high quality work at affordable prices.
+          I can handle all of your construction / carpentry needs. I offer high
+          quality work at affordable prices.
         </p>
-        <p className='opacity-0 animate-fadeIn delay-300 mt-2 text-base md:text-lg text-center max-w-4xl mx-auto'>
-          From custom woodwork to home renovations, our expertise covers every
+        <p className='opacity-0 animate-fadeIn delay-300 mt-2 text-base md:text-xl text-center max-w-4xl mx-auto'>
+          From custom woodwork to home renovations, my expertise covers every
           corner of your home.
         </p>
         <div className='opacity-0 animate-fadeIn delay-500 w-70 text-xl rounded-md bg-white/50 text-neutral-800 py-6 px-6 font-bold mt-6'>

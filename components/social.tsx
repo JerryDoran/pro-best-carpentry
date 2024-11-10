@@ -4,12 +4,12 @@ import { FaFacebook } from 'react-icons/fa6';
 
 export default function Social() {
   return (
-    <div className='flex justify-between items-center text-white bg-gray-900 p-4 px-9'>
+    <div className='flex justify-between items-center max-sm:flex-col max-sm:gap-2 text-white bg-gray-900 p-4 px-9'>
       <span className='text-xs flex items-center gap-2'>
         <Phone className='size-4' />
         (330)550-0088
-        <span className='text-xs ml-4 hidden sm:block'>FREE ESTIMATES</span>
       </span>
+      <span className='text-xs ml-4'>FREE ESTIMATES</span>
       <Link
         href='https://www.facebook.com/ProBestCarpentry/'
         className='flex items-center gap-2'

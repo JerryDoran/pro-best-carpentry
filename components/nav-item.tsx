@@ -10,16 +10,14 @@ type NavItemProps = {
 
 export default function NavItem({ href, label, isActive }: NavItemProps) {
   return (
-    <Button
-      asChild
-      size='sm'
-      variant='ghost'
+    <Link
+      href={href}
       className={cn(
-        'w-full lg:w-auto justify-between font-normal hover:bg-neutral-100 border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-neutral-800 focus:bg-white/20 transition text-md',
-        isActive ? 'bg-neutral-200 ' : 'bg-transparent'
+        'w-full lg:w-auto justify-between font-normal hover:bg-neutral-200 border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-neutral-800 transition text-md px-4 py-2 rounded-lg',
+        isActive ? 'text-indigo-700 ' : 'bg-transparent'
       )}
     >
-      <Link href={href}>{label}</Link>
-    </Button>
+      {label}
+    </Link>
   );
 }

@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss';
 import tailwindcssAnimate from 'tailwindcss-animate';
+import typography from '@tailwindcss/typography';
 
 const config = {
   darkMode: ['class'],
@@ -14,6 +15,7 @@ const config = {
     extend: {
       backgroundImage: {
         'home-img': "url('/images/bg-home.jpg')",
+        'transition-img': "url('/images/kitchen-parallax.jpg')",
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -86,7 +88,7 @@ const config = {
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [tailwindcssAnimate, typography],
 } satisfies Config;
 
 export default config;

@@ -79,7 +79,7 @@ export default function Navigation() {
   }
 
   return (
-    <nav className='hidden lg:flex items-center gap-x-2 overflow-x-auto pb-2'>
+    <nav className='hidden lg:flex items-center gap-x-4 overflow-x-auto pb-2'>
       {routes.map((route) => (
         <NavItem
           key={route.href}
