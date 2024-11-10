@@ -68,11 +68,11 @@ const config = {
           to: { height: '0' },
         },
         slideInLeft: {
-          '0%': { transform: 'translateX(-100px)', opacity: '0' },
+          '0%': { transform: 'translateX(-50px)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
         slideInRight: {
-          '0%': { transform: 'translateX(100px)', opacity: '0' },
+          '0%': { transform: 'translateX(50px)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
         fadeIn: {

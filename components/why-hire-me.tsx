@@ -49,7 +49,7 @@ export default function WhyHireMe() {
         <div className='space-y-12'>
           {/* Feature 1 */}
           <div
-            className='flex flex-col md:flex-row items-center md:text-left opacity-0 transition-opacity duration-800 ease-out'
+            className='flex flex-col md:flex-row items-center md:text-left opacity-0 transition-opacity duration-400 ease-out'
             ref={sectionRefs[0]}
             data-animation='slideInLeft'
             key='feature-1'
@@ -91,7 +91,7 @@ export default function WhyHireMe() {
 
           {/* Feature 2 */}
           <div
-            className='flex flex-col md:flex-row-reverse items-center md:text-left opacity-0 transition-opacity duration-800 ease-out'
+            className='flex flex-col md:flex-row-reverse items-center md:text-left opacity-0 transition-opacity duration-400 ease-out'
             ref={sectionRefs[1]}
             data-animation='slideInRight'
             key='feature-2'
