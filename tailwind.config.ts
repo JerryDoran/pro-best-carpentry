@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 import tailwindcssAnimate from 'tailwindcss-animate';
 import typography from '@tailwindcss/typography';
+import aspectRatio from '@tailwindcss/aspect-ratio';
 
 const config = {
   darkMode: ['class'],
@@ -88,7 +89,7 @@ const config = {
       },
     },
   },
-  plugins: [tailwindcssAnimate, typography],
+  plugins: [tailwindcssAnimate, typography, aspectRatio],
 } satisfies Config;
 
 export default config;
