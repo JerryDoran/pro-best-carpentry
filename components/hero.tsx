@@ -46,7 +46,7 @@ export default function Hero() {
         </Link>
         <Link
           href='/'
-          className='flex-1 bg-neutral-800 h-auto flex justify-center items-center p-6 group relative overflow-hidden'
+          className='flex-1 bg-neutral-800 h-[200px] flex justify-center items-center p-6 group relative overflow-hidden'
         >
           <h2 className='text-white text-base uppercase relative z-10 text-custom'>
             Custom Renovations
