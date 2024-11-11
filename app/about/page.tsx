@@ -113,7 +113,7 @@ export default function AboutPage() {
             Ready to Start Your Project?
           </h2>
           <p className='mb-6'>
-            Contact us today for a free consultation and let's bring your
+            Contact us today for a free consultation and let&apos;s bring your
             carpentry dreams to life!
           </p>
           <div className='flex flex-wrap justify-center gap-4'>
