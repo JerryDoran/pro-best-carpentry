@@ -79,6 +79,10 @@ const config = {
           '0%': { transform: 'translateY(100px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        fadeInStill: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -86,6 +90,7 @@ const config = {
         slideInLeft: 'slideInLeft 0.5s ease-out forwards',
         slideInRight: 'slideInRight 0.5s ease-out forwards',
         fadeIn: 'fadeIn 0.8s ease-out forwards',
+        fadeInStill: 'fadeInStill 0.5s ease-out forwards',
       },
     },
   },

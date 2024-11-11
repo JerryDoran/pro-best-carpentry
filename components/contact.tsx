@@ -11,7 +11,7 @@ export default function Contact() {
     <section className='pb-6 pt-12 grid md:grid-cols-2 gap-4 max-w-6xl mx-auto px-6'>
       <div>
         <h1 className='text-2xl font-semibold'>
-          Home Remodeling Contractor in Youngtown, OH
+          Home Remodeling Contractor in Youngstown, OH
         </h1>
         <p className='prose text-sm text-gray-500 mt-4'>
           We offer a wide range of services. From custom woodwork, kitchens, and

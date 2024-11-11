@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function WhyHireMe() {
   // Refs for observing sections
-  const sectionRefs = [useRef(null), useRef(null), useRef(null)];
+  const sectionRefs = [useRef(null), useRef(null)];
 
   useEffect(() => {
     const options = {
@@ -18,10 +18,8 @@ export default function WhyHireMe() {
         if (entry.isIntersecting) {
           // Get the desired animation from the data attribute
           const animationType = entry.target.getAttribute('data-animation');
-          if (animationType === 'slideInLeft') {
-            entry.target.classList.add('animate-slideInLeft', 'opacity-100');
-          } else if (animationType === 'slideInRight') {
-            entry.target.classList.add('animate-slideInRight', 'opacity-100');
+          if (animationType === 'fadeIn') {
+            entry.target.classList.add('animate-fadeIn', 'opacity-100');
           }
         }
       });
@@ -51,7 +49,7 @@ export default function WhyHireMe() {
           <div
             className='flex flex-col md:flex-row items-center md:text-left opacity-0 transition-opacity duration-400 ease-out'
             ref={sectionRefs[0]}
-            data-animation='slideInLeft'
+            data-animation='fadeIn'
             key='feature-1'
           >
             <div className='md:w-1/2 md:pr-8'>
@@ -93,7 +91,7 @@ export default function WhyHireMe() {
           <div
             className='flex flex-col md:flex-row-reverse items-center md:text-left opacity-0 transition-opacity duration-400 ease-out'
             ref={sectionRefs[1]}
-            data-animation='slideInRight'
+            data-animation='fadeIn'
             key='feature-2'
           >
             <div className='md:w-1/2 md:pl-8'>
@@ -139,3 +137,6 @@ export default function WhyHireMe() {
     </section>
   );
 }
+// } else if (animationType === 'slideInRight') {
+//   entry.target.classList.add('animate-slideInRight', 'opacity-100');
+// }

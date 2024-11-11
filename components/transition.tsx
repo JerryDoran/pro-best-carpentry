@@ -1,6 +1,6 @@
 export default function Transition() {
   return (
-    <div className='relative bg-transition-img bg-center bg-cover bg-no-repeat'>
+    <div className='relative bg-transition-img bg-center bg-cover bg-no-repeat sm:bg-fixed'>
       <div className='absolute inset-0 bg-black opacity-40 h-[100%] w-[100%]' />
       <section className='h-[100%] w-[100%] flex flex-col items-center justify-center gap-6 relative text-white z-10 p-4 py-32'>
         <h1 className='text-2xl md:text-4xl font-bold mt-8 text-center'>
