@@ -19,13 +19,13 @@ import {
   Cog,
 } from 'lucide-react';
 import { ReactNode } from 'react';
-import granite from '@/assests/images/granite.jpeg';
-import kitchen from '@/assests/images/kitchen.jpg';
-import office from '@/assests/images/office.jpg';
-import framings from '@/assests/images/framings.jpg';
-import outdoor from '@/assests/images/outdoor.jpg';
-import bathroom from '@/assests/images/bathroom.jpg';
-import general from '@/assests/images/general.jpg';
+import granite from '@/assets/images/granite.jpeg';
+import kitchen from '@/assets/images/kitchen.jpg';
+import office from '@/assets/images/office.jpg';
+import framings from '@/assets/images/framings.jpg';
+import outdoor from '@/assets/images/outdoor.jpg';
+import bathroom from '@/assets/images/bathroom.jpg';
+import general from '@/assets/images/general.jpg';
 
 export default function ServicesPage() {
   return (
@@ -39,7 +39,7 @@ export default function ServicesPage() {
           priority
         />
         <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center'>
-          <h1 className='text-4xl md:text-5xl font-bold text-white text-center'>
+          <h1 className='text-4xl md:text-5xl font-bold text-white text-center animate-fadeIn'>
             Our Carpentry Services
           </h1>
         </div>

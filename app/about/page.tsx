@@ -10,7 +10,7 @@ import {
   Wrench,
 } from 'lucide-react';
 import { ReactNode } from 'react';
-import aboutBanner from '@/assests/images/about-banner.webp';
+import aboutBanner from '@/assets/images/about-banner.webp';
 
 export default function AboutPage() {
   return (

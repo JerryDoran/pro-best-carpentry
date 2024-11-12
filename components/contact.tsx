@@ -1,9 +1,9 @@
-import roadIcon from '@/assests/icons/road-icon.png';
-import phoneIcon from '@/assests/icons/phone-icon.png';
-import mailIcon from '@/assests/icons/mail-icon.png';
-import clockIcon from '@/assests/icons/clock-icon.png';
-import priceIcon from '@/assests/icons/price-icon.png';
-import googleReview from '@/assests/images/google-review.jpg';
+import roadIcon from '@/assets/icons/road-icon.png';
+import phoneIcon from '@/assets/icons/phone-icon.png';
+import mailIcon from '@/assets/icons/mail-icon.png';
+import clockIcon from '@/assets/icons/clock-icon.png';
+import priceIcon from '@/assets/icons/price-icon.png';
+import googleReview from '@/assets/images/google-review.jpg';
 import Image from 'next/image';
 
 export default function Contact() {
