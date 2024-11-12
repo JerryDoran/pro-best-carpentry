@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <div className='relative min-h-[calc(screen-145px)] bg-home-img bg-center bg-cover bg-no-repeat md:bg-fixed'>
+    <div className='relative min-h-[calc(screen-145px)] bg-home-img bg-center bg-cover bg-no-repeat lg:bg-fixed'>
       <div className='absolute inset-0 bg-black opacity-40 h-[100%] w-[100%]]' />
       <section className='flex flex-col items-center justify-center gap-6 relative text-white z-10 p-4'>
         <h1 className='opacity-0 animate-fadeIn text-4xl md:text-7xl font-bold mt-8 text-center'>

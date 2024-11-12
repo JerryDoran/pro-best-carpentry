@@ -83,6 +83,22 @@ const config = {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        appear: {
+          from: {
+            opacity: '0',
+          },
+          to: {
+            opacity: '1',
+          },
+        },
+        slide: {
+          from: {
+            transform: 'translateX(100%)',
+          },
+          to: {
+            transform: 'translateX(0%)',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -91,6 +107,8 @@ const config = {
         slideInRight: 'slideInRight 0.5s ease-out forwards',
         fadeIn: 'fadeIn 0.8s ease-out forwards',
         fadeInStill: 'fadeInStill 0.5s ease-out forwards',
+        appear: 'appear 1s ease-in-out',
+        slide: 'slide 750ms ease-in-out',
       },
     },
   },
