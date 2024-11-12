@@ -7,6 +7,7 @@ import { Bath, Building2, ChefHat, Hammer, Home, Layout } from 'lucide-react';
 import kitchen from '@/assets/images/kitchen.jpg';
 import kitchenTwo from '@/assets/images/kitchen-two.jpg';
 import kitchenThree from '@/assets/images/kitchen-three.jpg';
+import bathroom from '@/assets/images/bathroom.jpg';
 
 type TabId =
   | 'kitchens'
@@ -45,46 +46,39 @@ export default function Component() {
     bathrooms: [
       {
         title: 'Luxury Bathroom Remodel',
-        image:
-          'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bathroom.jpg-P11qvsa13xD9vrbbx6AKEBWK90FkAC.jpeg',
+        image: bathroom,
       },
       {
         title: 'Custom Shower Installation',
-        image:
-          'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20221212_155858.jpg-ZgSMO84KeP7pssyt3Bx0YCVERpTSoi.jpeg',
+        image: bathroom,
       },
     ],
     commercial: [
       {
         title: 'Commercial Space Development',
-        image:
-          'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/office.jpg-tanrH4kAh7usB5MeII9ZQLThzkJzAu.jpeg',
+        image: bathroom,
       },
       {
         title: 'Commercial Framing',
-        image:
-          'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/framing.jpg-lVLOe8CNBXsm1YP5C3ikHML1Nesyqj.jpeg',
+        image: bathroom,
       },
     ],
     interior: [
       {
         title: 'Laundry Room Renovation',
-        image:
-          'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20221212_160035.jpg-C9Tn3Dbf0mPIAgReao0dOzZwVlmgiv.jpeg',
+        image: bathroom,
       },
     ],
     exterior: [
       {
         title: 'Sunroom Addition',
-        image:
-          'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/outdoor.jpg-TO581p2FJmeZgC5wFSCzk65AdExbxy.jpeg',
+        image: bathroom,
       },
     ],
     custom: [
       {
         title: 'Custom Tile Installation',
-        image:
-          'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20221212_155917.jpg-NcaoUS21jgx1CdkQgzlremgT7Rk9fL.jpeg',
+        image: bathroom,
       },
     ],
   };
