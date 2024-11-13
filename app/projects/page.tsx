@@ -5,17 +5,37 @@ import Image, { StaticImageData } from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Bath, Building2, ChefHat, Hammer, Home, Layout } from 'lucide-react';
 import kitchen from '@/assets/images/kitchen.jpg';
+import kitchenOne from '@/public/images/bg-home.jpg';
 import kitchenTwo from '@/assets/images/kitchen-two.jpg';
 import kitchenThree from '@/assets/images/kitchen-three.jpg';
+import kitchenFour from '@/public/images/kitchen-parallax.jpg';
+import kitchenFive from '@/public/images/kitchen-one.jpg';
+import kitchenSix from '@/assets/images/general.jpg';
 import bathroom from '@/assets/images/bathroom.jpg';
+import bathOne from '@/assets/images/bathOne.jpg';
+import bathTwo from '@/assets/images/bathTwo.jpg';
+import bathThree from '@/assets/images/bathThree.jpg';
+import bathFour from '@/assets/images/bathFour.jpg';
+import bathFive from '@/assets/images/bathFive.jpg';
+import bathSix from '@/public/images/bathroom-one.jpg';
+import comOne from '@/assets/images/industrial.jpg';
+import comTwo from '@/assets/images/commerial-two.jpg';
+import comThree from '@/assets/images/office.jpg';
+import customOne from '@/assets/images/customOne.jpg';
+import customTwo from '@/assets/images/customTwo.jpg';
+import customThree from '@/assets/images/customThree.jpg';
+import customFour from '@/assets/images/customFour.jpg';
+import customFive from '@/assets/images/customFive.jpg';
+import customSix from '@/assets/images/customSix.jpg';
+import customSeven from '@/assets/images/customSeven.jpg';
+import customEight from '@/assets/images/customEight.jpg';
+import extOne from '@/assets/images/exterior-one.jpg';
+import extTwo from '@/assets/images/exterior-two.jpg';
+import extThree from '@/assets/images/extThree.jpg';
+import extFour from '@/assets/images/extFour.jpg';
+import extFive from '@/assets/images/outdoor.jpg';
 
-type TabId =
-  | 'kitchens'
-  | 'bathrooms'
-  | 'commercial'
-  | 'interior'
-  | 'exterior'
-  | 'custom';
+type TabId = 'kitchens' | 'bathrooms' | 'commercial' | 'exterior' | 'custom';
 
 export default function Component() {
   const [activeTab, setActiveTab] = useState('kitchens');
@@ -24,7 +44,6 @@ export default function Component() {
     { id: 'kitchens', icon: ChefHat, label: 'Kitchens' },
     { id: 'bathrooms', icon: Bath, label: 'Bathrooms' },
     { id: 'commercial', icon: Building2, label: 'Commercial' },
-    { id: 'interior', icon: Layout, label: 'Interior' },
     { id: 'exterior', icon: Home, label: 'Exterior' },
     { id: 'custom', icon: Hammer, label: 'Custom' },
   ];
@@ -36,11 +55,27 @@ export default function Component() {
     kitchens: [
       {
         title: 'Modern Kitchen Transformation',
+        image: kitchenOne,
+      },
+      {
+        title: 'Modern Kitchen Transformation',
         image: kitchenTwo,
       },
       {
         title: 'Contemporary Kitchen Design',
         image: kitchenThree,
+      },
+      {
+        title: 'Contemporary Kitchen Design',
+        image: kitchenFour,
+      },
+      {
+        title: 'Contemporary Kitchen Design',
+        image: kitchenFive,
+      },
+      {
+        title: 'Contemporary Kitchen Design',
+        image: kitchenSix,
       },
     ],
     bathrooms: [
@@ -50,35 +85,97 @@ export default function Component() {
       },
       {
         title: 'Custom Shower Installation',
-        image: bathroom,
+        image: bathOne,
+      },
+      {
+        title: 'Custom Shower Installation',
+        image: bathTwo,
+      },
+      {
+        title: 'Custom Shower Installation',
+        image: bathThree,
+      },
+      {
+        title: 'Custom Shower Installation',
+        image: bathFour,
+      },
+      {
+        title: 'Custom Shower Installation',
+        image: bathFive,
+      },
+      {
+        title: 'Custom Shower Installation',
+        image: bathSix,
       },
     ],
     commercial: [
       {
         title: 'Commercial Space Development',
-        image: bathroom,
+        image: comOne,
       },
       {
         title: 'Commercial Framing',
-        image: bathroom,
+        image: comTwo,
       },
-    ],
-    interior: [
       {
-        title: 'Laundry Room Renovation',
-        image: bathroom,
+        title: 'Commercial Framing',
+        image: comThree,
       },
     ],
     exterior: [
       {
         title: 'Sunroom Addition',
-        image: bathroom,
+        image: extOne,
+      },
+      {
+        title: 'Sunroom Addition',
+        image: extTwo,
+      },
+      {
+        title: 'Sunroom Addition',
+        image: extThree,
+      },
+      {
+        title: 'Sunroom Addition',
+        image: extFour,
+      },
+      {
+        title: 'Sunroom Addition',
+        image: extFive,
       },
     ],
     custom: [
       {
         title: 'Custom Tile Installation',
-        image: bathroom,
+        image: customOne,
+      },
+      {
+        title: 'Custom Tile Installation',
+        image: customTwo,
+      },
+      {
+        title: 'Custom Tile Installation',
+        image: customThree,
+      },
+      {
+        title: 'Custom Tile Installation',
+        image: customFour,
+      },
+      {
+        title: 'Custom Tile Installation',
+        image: customFive,
+      },
+      {
+        title: 'Custom Tile Installation',
+        image: customSix,
+      },
+      {
+        title: 'Custom Tile Installation',
+        image: customSeven,
+      },
+      {
+        title: 'Custom Tile Installation',
+        image: customEight,
       },
     ],
   };

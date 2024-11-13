@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <div className='relative min-h-[calc(screen-145px)] bg-home-img bg-center bg-cover bg-no-repeat lg:bg-fixed'>
-      <div className='absolute inset-0 bg-black opacity-40 h-[100%] w-[100%]]' />
+      <div className='absolute inset-0 bg-black opacity-40 h-[100%] w-[100%]' />
       <section className='flex flex-col items-center justify-center gap-6 relative text-white z-10 p-4'>
         <h1 className='opacity-0 animate-fadeIn text-4xl md:text-7xl font-bold mt-8 text-center'>
           Pro Best Carpentry
@@ -22,7 +22,7 @@ export default function Hero() {
       </section>
       <div className='grid md:grid-cols-2 lg:grid-cols-4 w-full text-white animate-fadeIn delay-700 opacity-0 mt-44'>
         <Link
-          href='/'
+          href='/carpentry'
           className='flex-1 bg-neutral-400 h-[200px] flex justify-center items-center p-6 group relative overflow-hidden'
         >
           <h2 className='text-white text-base uppercase relative z-10 text-custom'>
@@ -30,7 +30,7 @@ export default function Hero() {
           </h2>
         </Link>
         <Link
-          href='/'
+          href='/kitchen'
           className='flex-1 bg-neutral-500 h-[200px] flex justify-center items-center p-6 group relative overflow-hidden'
         >
           <h2 className='text-white text-base uppercase relative z-10 text-custom'>
@@ -38,7 +38,7 @@ export default function Hero() {
           </h2>
         </Link>
         <Link
-          href='/'
+          href='/bathroom'
           className='flex-1 bg-neutral-700 h-[200px] flex justify-center items-center p-6 group relative overflow-hidden'
         >
           <h2 className='text-white text-base uppercase relative z-10 text-custom'>
@@ -46,7 +46,7 @@ export default function Hero() {
           </h2>
         </Link>
         <Link
-          href='/'
+          href='/custom'
           className='flex-1 bg-neutral-800 h-[200px] flex justify-center items-center p-6 group relative overflow-hidden'
         >
           <h2 className='text-white text-base uppercase relative z-10 text-custom'>
