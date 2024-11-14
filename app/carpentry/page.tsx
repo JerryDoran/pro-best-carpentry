@@ -1,5 +1,7 @@
-import { Phone, MapPin, Clock } from 'lucide-react';
+import { Phone, MapPin, Clock, Hammer, BookOpen, Ruler } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Link from 'next/link';
 
 export default function FineCarpentryPage() {
   return (
@@ -21,8 +23,8 @@ export default function FineCarpentryPage() {
             <p className='text-xl mb-8 animate-fadeIn'>
               Carpentry service in Youngstown, OH
             </p>
-            <Button size='lg' className='animate-fadeIn'>
-              Get a Free Quote
+            <Button size='lg' className='animate-fadeIn bg-black/50'>
+              <Link href='/#contact'>Get a Free Quote</Link>
             </Button>
           </div>
         </section>
@@ -30,20 +32,55 @@ export default function FineCarpentryPage() {
         {/* About Section */}
         <section className='py-12'>
           <div className='container mx-auto px-4'>
-            <div className='max-w-3xl mx-auto'>
-              <p className='mb-4 prose'>
-                Wood makes a timeless addition to any home, but stock features
-                won&apos;t make your home stand out the way you want. Pro Best
-                Carpentry builds custom features how you envision. A contractor
-                can add custom molding, cabinets and bookcases. Just tell us
-                your design ideas, and we&apos;ll advise you on how to turn your
-                new ideas into tasteful wood features.
-              </p>
-              <p className='mb-4 prose'>
-                A contractor can build any wood feature you want. If you want to
-                install a deck or mantel for your fireplace, we can do that too.
-                Discover the endless customization possibilities for your home.
-              </p>
+            <h2 className='text-3xl font-bold mb-8 text-center'>
+              Our Carpentry Services
+            </h2>
+            <div className='grid md:grid-cols-3 gap-6'>
+              <Card>
+                <CardHeader>
+                  <CardTitle className='flex items-center'>
+                    <Hammer className='mr-2' />
+                    Custom Features
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    We build custom features exactly how you envision them. From
+                    molding to cabinets and bookcases, we turn your design ideas
+                    into tasteful wood features.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className='flex items-center'>
+                    <BookOpen className='mr-2' />
+                    Endless Possibilities
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    Discover the endless customization possibilities for your
+                    home. We can build any wood feature you want, including
+                    decks and mantels for your fireplace.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className='flex items-center'>
+                    <Ruler className='mr-2' />
+                    Timeless Additions
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                    Wood makes a timeless addition to any home. Our custom work
+                    ensures your home stands out with unique, high-quality
+                    carpentry that matches your vision.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
@@ -72,13 +109,8 @@ export default function FineCarpentryPage() {
                   <li>Desks</li>
                   <li>Banquets</li>
                 </ul>
-                <p className='prose'>
-                  We can also build custom bookshelves. Once we&apos;ve finished
-                  your project, we&apos;ll clean up the shavings and other
-                  debris.
-                </p>
               </div>
-              <div className="bg-[url('/placeholder.svg?height=400&width=600')] bg-cover bg-center h-64 md:h-full rounded-lg"></div>
+              <div className="bg-[url('/images/tools.jpg')] bg-cover bg-center h-64 md:h-full rounded-lg"></div>
             </div>
           </div>
         </section>
@@ -92,7 +124,9 @@ export default function FineCarpentryPage() {
             <p className='text-xl mb-8'>
               Schedule a custom installation today.
             </p>
-            <Button size='lg'>Schedule Now</Button>
+            <Button size='lg'>
+              <Link href='/#contact'>Schedule Your Installation</Link>
+            </Button>
           </div>
         </section>
 
@@ -118,7 +152,7 @@ export default function FineCarpentryPage() {
                 <Clock className='mr-4' />
                 <div>
                   <h3 className='font-semibold'>Hours</h3>
-                  <p>Always open</p>
+                  <p>Mon-Sun: 9am-5pm</p>
                 </div>
               </div>
             </div>

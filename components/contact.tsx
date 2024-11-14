@@ -8,7 +8,10 @@ import Image from 'next/image';
 
 export default function Contact() {
   return (
-    <section className='pb-6 pt-12 grid md:grid-cols-2 gap-4 max-w-6xl mx-auto px-6'>
+    <section
+      id='contact'
+      className='pb-6 pt-12 grid md:grid-cols-2 gap-4 max-w-6xl mx-auto px-6'
+    >
       <div>
         <h1 className='text-2xl font-semibold'>
           Home Remodeling Contractor in Youngstown, OH
@@ -87,7 +90,7 @@ export default function Contact() {
                 width={20}
                 height={20}
               />
-              Always Open
+              <span>Mon-Sun: 9am-5pm</span>
             </a>
           </li>
           <li className='text-sm'>
