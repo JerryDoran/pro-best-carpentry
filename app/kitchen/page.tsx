@@ -48,7 +48,7 @@ export default function KitchenRemodelingPage() {
             <div className='grid md:grid-cols-3 gap-6'>
               <Card>
                 <CardHeader className='w-full'>
-                  <CardTitle className='flex items-center text-xl'>
+                  <CardTitle className='flex items-center'>
                     <ChefHat className='mr-2' />
                     Custom Designs
                   </CardTitle>
@@ -63,7 +63,7 @@ export default function KitchenRemodelingPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className='flex items-center text-xl'>
+                  <CardTitle className='flex items-center'>
                     <Paintbrush className='mr-2' />
                     Quality Craftsmanship
                   </CardTitle>
@@ -78,7 +78,7 @@ export default function KitchenRemodelingPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className='flex items-center text-xl'>
+                  <CardTitle className='flex items-center'>
                     <Ruler className='mr-2' />
                     Efficient Planning
                   </CardTitle>
@@ -133,7 +133,7 @@ export default function KitchenRemodelingPage() {
             <div className='grid md:grid-cols-3 gap-6'>
               <Card>
                 <CardHeader>
-                  <CardTitle className='flex items-center text-xl'>
+                  <CardTitle className='flex items-center'>
                     <Hammer className='mr-2' />
                     Experience Matters
                   </CardTitle>
@@ -147,7 +147,7 @@ export default function KitchenRemodelingPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className='flex items-center text-xl'>
+                  <CardTitle className='flex items-center'>
                     <Award className='mr-2' />
                     Details Matter
                   </CardTitle>
@@ -161,7 +161,7 @@ export default function KitchenRemodelingPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className='flex items-center text-xl'>
+                  <CardTitle className='flex items-center'>
                     <ThumbsUp className='mr-2' />
                     100% Satisfaction Guarantee
                   </CardTitle>
