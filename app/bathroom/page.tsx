@@ -171,9 +171,9 @@ export default function BathroomRemodelingPage() {
                 </CardHeader>
                 <CardContent>
                   <p className='prose'>
-                    We're committed to your complete satisfaction. Our job isn't
-                    done until you're thrilled with your new bathroom and the
-                    entire remodeling experience.
+                    We&apos;re committed to your complete satisfaction. Our job
+                    isn&apos;t done until you&apos;re thrilled with your new
+                    bathroom and the entire remodeling experience.
                   </p>
                 </CardContent>
               </Card>
