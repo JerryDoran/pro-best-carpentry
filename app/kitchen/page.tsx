@@ -185,7 +185,7 @@ export default function KitchenRemodelingPage() {
               Ready to Start Your Kitchen Transformation?
             </h2>
             <p className='text-xl mb-8'>
-              Contact Elite Kitchen Remodeling for a free design consultation
+              Contact Pro Best Carpentry for a free design consultation
               today.
             </p>
             <Button size='lg' variant='secondary'>

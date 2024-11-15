@@ -109,22 +109,6 @@ export default function Contact() {
               Price Range - Call for a free estimate
             </a>
           </li>
-          <li className='text-sm'>
-            <a
-              href='https://www.google.com'
-              target='_blank'
-              rel='noreferrer'
-              className='flex items-center gap-2 hover:underline'
-            >
-              <Image
-                src={roadIcon}
-                alt='location icon'
-                width={20}
-                height={20}
-              />
-              Youngstown, OH, United States
-            </a>
-          </li>
         </ul>
         <div className='absolute top-10 right-5'>
           <a href='https://google.com'>

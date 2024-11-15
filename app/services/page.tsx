@@ -26,6 +26,7 @@ import framings from '@/assets/images/framings.jpg';
 import outdoor from '@/assets/images/outdoor.jpg';
 import bathroom from '@/assets/images/bathroom.jpg';
 import general from '@/assets/images/general.jpg';
+import Link from 'next/link';
 
 export default function ServicesPage() {
   return (
@@ -163,7 +164,8 @@ export default function ServicesPage() {
             carpentry dreams to life!
           </p>
           <Button size='lg' className='mb-6'>
-            Get a Free Quote
+            <Link href='/#contact'>Get a Free Quote</Link>
+            
           </Button>
           <div className='flex flex-wrap justify-center gap-4'>
             <Badge variant='secondary' className='text-lg py-2 px-4'>
@@ -203,7 +205,7 @@ function ServiceCard({
         <Image src={image} alt={title} layout='fill' objectFit='cover' />
       </div>
       <CardHeader>
-        <CardTitle className='flex items-center gap-2'>
+        <CardTitle className='flex items-center gap-2 text-xl'>
           {icon}
           {title}
         </CardTitle>
@@ -230,7 +232,7 @@ function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className='flex items-center gap-2'>
+        <CardTitle className='flex items-center gap-2 text-xl'>
           {icon}
           {title}
         </CardTitle>

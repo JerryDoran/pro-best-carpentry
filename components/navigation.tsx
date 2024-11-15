@@ -9,6 +9,8 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
 
+import Image from 'next/image';
+
 const routes = [
   {
     href: '/',
@@ -22,6 +24,39 @@ const routes = [
     href: '/services',
     label: 'Services',
   },
+  {
+    href: '/projects',
+    label: 'Projects',
+  },
+  {
+    href: '/contact',
+    label: 'Contact',
+  },
+];
+const mobileRoutes = [
+  {
+    href: '/',
+    label: 'Home',
+  },
+  {
+    href: '/about',
+    label: 'About',
+  },
+  {
+    href: '/services',
+    label: 'Services',
+  },
+  {
+    href: '/',
+    label: 'Remodeling',
+    remServices: [
+      { href: '/carpentry', label: 'Fine Carpentry' },
+      { href: '/kitchen', label: 'Kitchen Remodeling' },
+      { href: '/bathroom', label: 'Bathroom Remodeling' },
+      { href: '/custom', label: 'Custom Renovations' },
+    ],
+  },
+
   {
     href: '/projects',
     label: 'Projects',
@@ -62,16 +97,42 @@ export default function Navigation() {
           className='px-2 bg-neutral-100 border-none z-50 '
         >
           <nav className='flex flex-col gap-y-2 pt-6'>
-            {routes.map((route) => (
-              <Button
-                key={route.href}
-                variant={route.href === pathname ? 'secondary' : 'ghost'}
-                onClick={() => onClick(route.href)}
-                className='justify-start  hover:bg-neutral-200 border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none transition text-neutral-800 '
-              >
-                {route.label}
-              </Button>
-            ))}
+            {mobileRoutes.map((route) => {
+              if (route.label === 'Remodeling') {
+                return (
+                  <>
+                    <span
+                      className='text-sm ml-4 uppercase py-2 text-gray-500 underline'
+                      key={route.label}
+                    >
+                      {route.label}
+                    </span>
+                    {route.remServices?.map((service) => (
+                      <Button
+                        variant={
+                          route.href === pathname ? 'secondary' : 'ghost'
+                        }
+                        onClick={() => onClick(service.href)}
+                        key={service.label}
+                        className='ml-10 justify-start  hover:bg-neutral-200 border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none transition text-neutral-800 uppercase'
+                      >
+                        {service.label}
+                      </Button>
+                    ))}
+                  </>
+                );
+              }
+              return (
+                <Button
+                  key={route.href}
+                  variant={route.href === pathname ? 'secondary' : 'ghost'}
+                  onClick={() => onClick(route.href)}
+                  className='justify-start  hover:bg-neutral-200 border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none transition text-neutral-800 uppercase'
+                >
+                  {route.label}
+                </Button>
+              );
+            })}
           </nav>
         </SheetContent>
       </Sheet>
