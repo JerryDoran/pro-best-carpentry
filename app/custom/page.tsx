@@ -115,7 +115,7 @@ export default function CustomRenovationServices() {
                   <li>Quality control and final walkthrough</li>
                 </ol>
               </div>
-              <div className="bg-[url('/placeholder.svg?height=300&width=400')] bg-cover bg-center h-64 md:h-full rounded-lg"></div>
+              <div className="bg-[url('/images/custom-renovation.jpg')] bg-cover bg-center h-64 md:h-full rounded-lg" />
             </div>
           </div>
         </section>

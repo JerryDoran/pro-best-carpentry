@@ -40,7 +40,7 @@ export default function WhyHireMe() {
         }
       });
     };
-  }, []);
+  }, [sectionRefs]);
   return (
     <section className='py-20 text-center px-4 bg-white'>
       <div className=' max-w-7xl mx-auto'>
