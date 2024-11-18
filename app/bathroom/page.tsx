@@ -16,25 +16,19 @@ import Link from 'next/link';
 export default function BathroomRemodelingPage() {
   return (
     <div className='min-h-screen bg-background text-foreground'>
-      <header className='bg-primary text-primary-foreground py-4'>
-        <div className='container mx-auto px-4'>
-          <h1 className='text-2xl font-bold'>Pro Best Carpentry</h1>
-        </div>
-      </header>
-
       <main>
         {/* Hero Section */}
         <section className="relative bg-[url('/images/bathroom-banner.jpg')] bg-cover bg-center py-20">
           <div className='absolute inset-0 bg-black opacity-40' />
           <div className='container mx-auto px-4 text-center text-white relative z-10'>
-            <h2 className='text-4xl font-bold mb-4 animate-fadeIn'>
+            <h2 className='text-4xl md:text-5xl font-bold mb-4 animate-fadeIn'>
               Transform Your Bathroom with Pro Best Carpentry
             </h2>
             <p className='text-xl mb-8 animate-fadeIn'>
               Expert Bathroom Remodeling in Youngstown, OH
             </p>
             <Button size='lg' className='animate-fadeIn bg-black/50'>
-              <Link href='/#contact'>Get Your Free Estimate</Link>
+              <Link href='/contact'>Get Your Free Estimate</Link>
             </Button>
           </div>
         </section>
@@ -192,7 +186,7 @@ export default function BathroomRemodelingPage() {
               remodel today.
             </p>
             <Button size='lg' variant='secondary'>
-              <Link href='/#contact'>Schedule Your Consultation</Link>
+              <Link href='/contact'>Schedule Your Consultation</Link>
             </Button>
           </div>
         </section>

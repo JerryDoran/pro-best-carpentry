@@ -11,6 +11,8 @@ import {
 } from 'lucide-react';
 import { ReactNode } from 'react';
 import aboutBanner from '@/assets/images/about-banner.webp';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function AboutPage() {
   return (
@@ -116,6 +118,9 @@ export default function AboutPage() {
             Contact us today for a free consultation and let&apos;s bring your
             carpentry dreams to life!
           </p>
+          <Button size='lg' className='mb-6'>
+            <Link href='/contact'>Get a Free Quote</Link>
+          </Button>
           <div className='flex flex-wrap justify-center gap-4'>
             <Badge variant='secondary' className='text-lg py-2 px-4'>
               Residential

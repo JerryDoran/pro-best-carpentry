@@ -6,25 +6,19 @@ import Link from 'next/link';
 export default function FineCarpentryPage() {
   return (
     <div className='min-h-screen bg-background text-foreground'>
-      <header className='bg-primary text-primary-foreground py-4'>
-        <div className='container mx-auto px-4'>
-          <h1 className='text-2xl font-bold'>Pro Best Carpentry</h1>
-        </div>
-      </header>
-
       <main>
         {/* Hero Section */}
         <section className="relative bg-[url('/images/carpentryBanner.jpg')] bg-cover bg-bottom py-20">
           <div className='absolute inset-0 bg-black opacity-40' />
           <div className='container mx-auto px-4 text-center text-white z-20'>
-            <h2 className='text-4xl font-bold mb-4 animate-fadeIn'>
+            <h2 className='text-4xl md:text-5xl font-bold mb-4 animate-fadeIn'>
               Refine Your Home With Custom Wood Additions
             </h2>
             <p className='text-xl mb-8 animate-fadeIn'>
               Carpentry service in Youngstown, OH
             </p>
             <Button size='lg' className='animate-fadeIn bg-black/50'>
-              <Link href='/#contact'>Get a Free Quote</Link>
+              <Link href='/contact'>Get a Free Quote</Link>
             </Button>
           </div>
         </section>
@@ -125,7 +119,7 @@ export default function FineCarpentryPage() {
               Schedule a custom installation today.
             </p>
             <Button size='lg'>
-              <Link href='/#contact'>Schedule Your Installation</Link>
+              <Link href='/contact'>Schedule Your Installation</Link>
             </Button>
           </div>
         </section>

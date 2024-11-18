@@ -164,7 +164,7 @@ export default function ServicesPage() {
             carpentry dreams to life!
           </p>
           <Button size='lg' className='mb-6'>
-            <Link href='/#contact'>Get a Free Quote</Link>
+            <Link href='/contact'>Get a Free Quote</Link>
             
           </Button>
           <div className='flex flex-wrap justify-center gap-4'>

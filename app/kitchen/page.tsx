@@ -16,25 +16,19 @@ import Link from 'next/link';
 export default function KitchenRemodelingPage() {
   return (
     <div className='min-h-screen bg-background text-foreground'>
-      <header className='bg-primary text-primary-foreground py-4'>
-        <div className='container mx-auto px-4'>
-          <h1 className='text-2xl font-bold'>Probest Carpentry</h1>
-        </div>
-      </header>
-
       <main>
         {/* Hero Section */}
         <section className="relative bg-[url('/images/kitchen-parallax.jpg')] bg-cover bg-center py-20">
           <div className='absolute inset-0 bg-black opacity-40' />
           <div className='container mx-auto px-4 text-center text-white relative z-10'>
-            <h2 className='text-4xl font-bold mb-4 animate-fadeIn'>
+            <h2 className='text-4xl md:text-5xl font-bold mb-4 animate-fadeIn'>
               Transform Your Kitchen Into a Culinary Haven
             </h2>
             <p className='text-xl mb-8 animate-fadeIn'>
               Expert Kitchen Remodeling in Youngstown, OH
             </p>
             <Button size='lg' className='animate-fadeIn bg-black/50'>
-              <Link href='/#contact'>Get a Free Consultation</Link>
+              <Link href='/contact'>Get a Free Consultation</Link>
             </Button>
           </div>
         </section>
@@ -185,11 +179,10 @@ export default function KitchenRemodelingPage() {
               Ready to Start Your Kitchen Transformation?
             </h2>
             <p className='text-xl mb-8'>
-              Contact Pro Best Carpentry for a free design consultation
-              today.
+              Contact Pro Best Carpentry for a free design consultation today.
             </p>
             <Button size='lg' variant='secondary'>
-              <Link href='/#contact'>Schedule Your Consultation</Link>
+              <Link href='/contact'>Schedule Your Consultation</Link>
             </Button>
           </div>
         </section>
