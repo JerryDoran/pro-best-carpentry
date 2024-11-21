@@ -10,7 +10,7 @@ export default function WhyHireMe() {
 
   useEffect(() => {
     const options = {
-      threshold: 0.6, // Trigger when 10% of the element is in view
+      threshold: 0.25, // Trigger when 10% of the element is in view
     };
 
     const observer = new IntersectionObserver((entries) => {

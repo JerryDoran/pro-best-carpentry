@@ -26,7 +26,7 @@ export default function Hero() {
       <div className='grid md:grid-cols-2 lg:grid-cols-5 w-full text-white animate-fadeIn delay-500 opacity-0'>
         <Link
           href='/carpentry'
-          className='flex-1 bg-neutral-200 h-[200px] flex justify-center items-center p-6 relative overflow-hidden link'
+          className='flex-1 bg-neutral-400 h-[200px] flex justify-center items-center p-6 relative overflow-hidden link'
         >
           <h2 className='text-white text-base uppercase relative z-10 text-custom text-center'>
             Fine Carpentry
@@ -34,7 +34,7 @@ export default function Hero() {
         </Link>
         <Link
           href='/kitchen'
-          className='flex-1 bg-neutral-400 h-[200px] flex justify-center items-center p-6 relative overflow-hidden link'
+          className='flex-1 bg-neutral-500 h-[200px] flex justify-center items-center p-6 relative overflow-hidden link'
         >
           <h2 className='text-white text-base uppercase relative z-10 text-custom text-center'>
             Kitchen Remodeling
@@ -42,7 +42,7 @@ export default function Hero() {
         </Link>
         <Link
           href='/bathroom'
-          className='flex-1 bg-neutral-500 h-[200px] flex justify-center items-center p-6 relative overflow-hidden link'
+          className='flex-1 bg-neutral-600 h-[200px] flex justify-center items-center p-6 relative overflow-hidden link'
         >
           <h2 className='text-white text-base uppercase relative z-10 text-custom text-center'>
             Bathroom Remodeling
