@@ -34,13 +34,6 @@ export const testimonials = [
   {
     id: 5,
     review:
-      "Tom does great work,  but for many of these projects he wasn't the designer or did he do the critical measurements. A talented young man who, as far as I know,  has little design training. People should be aware of this if they are contemplating a complicated design.",
-    name: 'Jody Dorsett',
-    date: 'July 2, 2018',
-  },
-  {
-    id: 6,
-    review:
       'Tom and his crew did a fabulous job adding a backsplash and crown molding to our kitchen. Their attention to detail is amazing! Fabulous job and very professional!',
     name: 'Stephen McDermott',
     date: 'May 24, 2018',

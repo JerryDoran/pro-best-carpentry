@@ -122,7 +122,7 @@ export default function KitchenRemodelingPage() {
         <section className='py-16'>
           <div className='container mx-auto px-4'>
             <h2 className='text-3xl font-bold mb-8 text-center'>
-              Why Choose Probest Carpentry
+              Why Choose Pro Best Carpentry
             </h2>
             <div className='grid md:grid-cols-3 gap-6'>
               <Card>
@@ -195,7 +195,7 @@ export default function KitchenRemodelingPage() {
                 <Phone className='mr-4' />
                 <div>
                   <h3 className='font-semibold'>Phone</h3>
-                  <p>(330)555-1234</p>
+                  <p>(330) 550-0088</p>
                 </div>
               </div>
               <div className='flex items-center justify-center'>
